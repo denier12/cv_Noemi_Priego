@@ -9,7 +9,7 @@ body {
 
 /* CABECERA CON IMAGEN DE FONDO */
 .header-banner {
-    background-image: url("imagen.png"); /* Asegurate de que el archivo se llame igual */
+    background-image: url("color.jpg"); /* Asegurate de que el archivo se llame igual */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
