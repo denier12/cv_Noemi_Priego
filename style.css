@@ -1,0 +1,137 @@
+/* FONDO GENERAL BEIGE */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f0e6;
+    color: #111;
+}
+
+/* CABECERA CON IMAGEN DE FONDO */
+.header-banner {
+    background-image: url("imagen.png"); /* Asegurate de que el archivo se llame igual */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 180px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/* TITULO CENTRADO DENTRO DEL HEADER */
+.header-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.header-title h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+.header-title h3 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+/* CONTENEDOR BLANCO PRINCIPAL */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.12);
+    position: relative;
+}
+
+/* COLUMNA IZQUIERDA */
+.left {
+    flex: 1;
+    background-color: rgba(243, 243, 243, 0.9);
+    padding: 20px;
+    z-index: 1;
+}
+
+/* COLUMNA DERECHA */
+.right {
+    flex: 2;
+    padding: 20px 30px;
+    background-color: rgba(255, 255, 255, 0.92);
+    z-index: 1;
+}
+
+/* TITULOS */
+h1 {
+    font-size: 26px;
+    margin-bottom: 0;
+    color: #111;
+}
+
+h3 {
+    margin-top: 5px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #444;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1f262e;
+    border-bottom: 2px solid #1f262e;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+}
+
+/* TEXTO Y LISTAS */
+p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 8px 0;
+}
+
+ul {
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+ul li {
+    margin-bottom: 6px;
+}
+
+.icon {
+    margin-right: 8px;
+}
+
+/* RESPONSIVE PARA MOVILES */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .left, .right {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .header-banner {
+        height: 140px;
+    }
+
+    .header-title h1 {
+        font-size: 20px;
+    }
+
+    .header-title h3 {
+        font-size: 14px;
+    }
+}
